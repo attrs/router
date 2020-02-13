@@ -1,4 +1,4 @@
-var app = xrouter()
+var app = router()
   .config('view target', '#target1')  // default render target
   .config('views', '/')
   .use(function(req, res, next) {
@@ -8,7 +8,7 @@ var app = xrouter()
   .get('/', function(req, res, next) {
     res.render.html('Hello!');
   })
-  .use('/sub', xrouter.Router()
+  .use('/sub', router.Router()
      .use(function(req, res, next) {
        console.log('sub routing...');
        res.set('view target', '#target2');

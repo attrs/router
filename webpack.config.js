@@ -19,8 +19,8 @@ module.exports = {
   entry: path.join(__dirname, 'lib/index.js'),
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'x-router.js',
-    library: 'xrouter',
+    filename: 'router.js',
+    library: 'router',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

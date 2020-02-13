@@ -1,4 +1,4 @@
-var router = require('x-router');
+var router = require('@attrs/router');
 var angularengine = require('x-router-angular');
 var angular = require('angular');
 

@@ -1,6 +1,6 @@
-var xrouter = require('x-router');
+var router = require('@attrs/router');
 
-var subapp = xrouter('subapp')
+var subapp = router('subapp')
 .use(function(req, res, next) {
   console.log('subapp', req.app.id, req.href, req.url, req.parentURL || '(empty)', req.params);
   next();
@@ -14,7 +14,7 @@ var subapp = xrouter('subapp')
   next();
 });
 
-var subrouter = xrouter.Router('subrouter')
+var subrouter = router.Router('subrouter')
 .use(function(req, res, next) {
   console.log('subrouter', req.app.id, req.href, req.url, req.parentURL || '(empty)', req.params);
   next();
@@ -28,7 +28,7 @@ var subrouter = xrouter.Router('subrouter')
   next();
 });
 
-var app = xrouter('app')
+var app = router('app')
 .use(function(req, res, next) {
   res.config('key', 'value');
   console.info('start', req, res.config('key'));
@@ -41,7 +41,7 @@ var app = xrouter('app')
   next();
 })
 .use('/:a', 
-  xrouter.Router('sub')
+  router.Router('sub')
   .use(function(req, res, next) {
     console.log('sub', req.app.id, req.href, req.url, req.parentURL || '(empty)', req.params);
     next();
@@ -55,7 +55,7 @@ var app = xrouter('app')
     next();
   })
   .use('/:b', 
-    xrouter.Router('sub2')
+    router.Router('sub2')
     .use(function(req, res, next) {
       console.log('sub2', req.app.id, req.href, req.url, req.parentURL || '(empty)', req.params);
       next();

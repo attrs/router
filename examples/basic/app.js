@@ -1,4 +1,4 @@
-var router = require('x-router');
+var router = require('@attrs/router');
 
 router()
   .set('view target', '#page')

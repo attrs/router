@@ -27,7 +27,7 @@ gulp.task('build.webpack', ['build.js.clean'], () => {
 });
 
 gulp.task('build', ['build.webpack'], () => {
-  return gulp.src(path.join(dist, 'x-router.js'))
+  return gulp.src(path.join(dist, 'router.js'))
     .pipe(header([
       '/*!',
       '* <%= pkg.name %>',

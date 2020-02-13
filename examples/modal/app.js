@@ -1,10 +1,10 @@
-var xrouter = require('x-router');
-var xroutermodal = require('x-router-modal');
+var router = require('@attrs/router');
+var routermodal = require('x-router-modal');
 
-xrouter()
+router()
   .set('view target', '#page')
   .set('views', '/partials/')
-  .use(xroutermodal())
+  .use(routermodal())
   .use(function(req, res, next) {
     res.render('header.html', '#header');
     res.render('footer.html', '#footer');
@@ -19,7 +19,7 @@ xrouter()
       target.querySelector('#value').innerHTML = 'Page C !!';
     });
   })
-  .use('/:id', xrouter.Router()
+  .use('/:id', router.Router()
     .get('/', function(req, res, next) {
       res.render('article.html', function(err, target) {
         if( err ) return next(err);
