@@ -7,11 +7,12 @@
   "repository": "attrs/router",
   "author": "joje <joje.attrs@gmail.com>",
   "scripts": {
-    "prepublishOnly": "gulp",
-    "dev": "wpm up ./test -s -d ./test/exam1.html"
+    "prepublishOnly": "gulp"
   },
   "license": "MIT",
   "devDependencies": {
+    "prettier": "^2.0.4",
+    "rimraf": "^3.0.2",
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.9",
     "gulp-rename": "^1.2.2",
