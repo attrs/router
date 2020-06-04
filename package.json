@@ -6,16 +6,13 @@
   "homepage": "https://github.com/attrs/router",
   "repository": "attrs/router",
   "author": "joje <joje.attrs@gmail.com>",
-  "scripts": {
-    "prepublishOnly": "gulp"
-  },
   "license": "MIT",
   "devDependencies": {
     "prettier": "^2.0.4",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@attrs/modal": "^0.2.1",
+    "@attrs/modal": "^0.2.2",
     "route-pattern": "0.0.6",
     "tinyevent": "^0.1.3"
   },
