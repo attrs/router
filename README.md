@@ -1,6 +1,6 @@
 # @attrs/router
 
-[![NPM Version][npm-version]][npm-url] [![NPM Downloads][npm-total]][npm-url] [![NPM Downloads][npm-month]][npm-url] [![NPM Downloads][license]][npm-url] [![Join the chat at https://gitter.im/attrs/@attrs/router][gitter]][gitter-link]
+[![NPM Version][npm-version]][npm-url] [![NPM Downloads][npm-total]][npm-url] [![NPM Downloads][npm-month]][npm-url] [![NPM Downloads][license]][npm-url]
 
 [npm-version]: https://img.shields.io/npm/v/@attrs/router.svg?style=flat
 [npm-url]: https://npmjs.org/package/@attrs/router
@@ -8,7 +8,7 @@
 [npm-month]: https://img.shields.io/npm/dm/@attrs/router.svg?style=flat
 [license]: https://img.shields.io/npm/l/@attrs/router.svg?style=flat
 
-frontend router
+
 
 ## Install
 ```sh
