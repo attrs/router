@@ -1,6 +1,6 @@
 {
   "name": "@attrs/router",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "frontend router",
   "main": "lib/index.js",
   "homepage": "https://github.com/attrs/router",
